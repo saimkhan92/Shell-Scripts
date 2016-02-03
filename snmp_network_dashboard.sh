@@ -1,4 +1,4 @@
-
+while true;do
  r1Contact=$(snmpget -v 1 -c public 198.51.100.4 1.3.6.1.2.1.1.4.0|cut -d : -f 4)
  r1Name=$(snmpget -v 1 -c public 198.51.100.4 1.3.6.1.2.1.1.5.0|cut -d : -f 4)
  r1Location=$(snmpget -v 1 -c public 198.51.100.4 1.3.6.1.2.1.1.6.0|cut -d : -f 4)
@@ -43,3 +43,5 @@
  echo "Location:" $r4Location
  echo "Number:" $r4Number
  echo "Uptime:" $r4Uptime
+ sleep 15
+done
