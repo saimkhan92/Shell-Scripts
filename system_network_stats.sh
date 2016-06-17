@@ -1,4 +1,5 @@
 #!/bin/bash
+# Script to present network and system stats of a linux machine in a user friendly manner
 
 ping 8.8.8.8 -c 1 -W 1 &>/dev/null
 ping_flag=$?
